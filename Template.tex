@@ -55,20 +55,37 @@ Then, mechanisms of storing passwords will be entailed.
 The design of the policy is the result of balancing complexity and overall security. 
 As Gollmann \cite{GollmannDieter2011Cs/D}suggested, the overall security may be diminished 
 if one security mechanism is overstated. Users tend to bypass the mechanism if it is too 
-inappropriate for them to properly work with, hence the ovarall security of the system 
+inappropriate for them to properly work with, hence the overall security of the system 
 may be weakened. By considering that, the following password policies are proposed.
 
 \subsubsection{Password Length}
+This policy enforces the minimum number of character required to use as a valid password. 
+Generally, the short the password, the more like and easily to be cracked by brute-forcing.
+Hence, by setting the minimum password length to ten, the difficulty for brute-forcing password 
+cracking would be noticeably increased.
 
 \subsubsection{Password Format}
+This policy intended to accumulating the strength of the valid password by requiring what and 
+how many kinds of character must be included in a password. By requiring the password to contain 
+at least one lower and upper letter, one number, and one special character, combining with 
+password length policy, the possibility of successful brute-force cracking would significantly decreasing.
 
 \subsubsection{Password Ageing}
+This policy requires users to change their password periodically. The likelihood of password 
+breaching would increase as time goes by, hence this is a appropriate approach to eliminate the 
+risk of potential breaching.
+
+\subsubsection{Password Use}
+To further diminishing the risk of potential password breaching over time, additional mechanism 
+need to be employed to block users from using the same password twice. This policy is essential 
+to assist the password ageing policy to fulfil its purpose.
+
 
 \subsubsection{Login Attempts}
 
-\subsubsection{Password Use}
-
 \subsection{Additional Authentication Measures}
+
+TOCTTOU and Biometrics
 
 \subsection{Storing Passwords}
 
