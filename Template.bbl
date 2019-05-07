@@ -5,4 +5,10 @@ Dieter Gollmann,
 \newblock {\em Computer Security},
 \newblock Hoboken, N.J., 3rd ed. edition, 2011.
 
+\bibitem{FergusonNiels2010Ce:d}
+Tadayoshi~Kohno Niels~Ferguson, Bruce~Schneier,
+\newblock {\em Cryptography Engineering: Design Principles and Practical
+  Applications},
+\newblock Indianapolis, Ind., 2010.
+
 \end{thebibliography}

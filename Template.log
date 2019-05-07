@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  7 MAY 2019 21:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  7 MAY 2019 22:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -177,33 +177,33 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 <image1.jpg, id=1, 1557.82pt x 876.27374pt>
 File: image1.jpg Graphic file (type jpg)
 <use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 115.
+Package pdftex.def Info: image1.jpg  used on input line 127.
 (pdftex.def)             Requested size: 241.84842pt x 136.03496pt.
 File: image1.jpg Graphic file (type jpg)
 <use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 122.
+Package pdftex.def Info: image1.jpg  used on input line 134.
 (pdftex.def)             Requested size: 113.81102pt x 64.00623pt.
 File: image1.jpg Graphic file (type jpg)
 <use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 129.
+Package pdftex.def Info: image1.jpg  used on input line 141.
 (pdftex.def)             Requested size: 113.81102pt x 64.00623pt.
- (./Template.bbl [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
- <./image1.jpg>]) [2
+] (./Template.bbl) [2
 
-] (./Template.aux) ) 
+ <./image1.jpg>] (./Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2216 strings out of 492616
- 29237 string characters out of 6135178
- 98865 words of memory out of 5000000
- 6097 multiletter control sequences out of 15000+600000
+ 2217 strings out of 492616
+ 29260 string characters out of 6135178
+ 99868 words of memory out of 5000000
+ 6098 multiletter control sequences out of 15000+600000
  16840 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,25p,318b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (2 pages, 255865 bytes).
+Output written on Template.pdf (2 pages, 258291 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

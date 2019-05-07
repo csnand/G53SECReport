@@ -4,45 +4,46 @@ The top-level auxiliary file: Template.aux
 The style file: IEEEbib.bst
 Database file #1: bibtex.bib
 Warning--empty publisher in GollmannDieter2011Cs/D
-You've used 1 entry,
+Warning--empty publisher in FergusonNiels2010Ce:d
+You've used 2 entries,
             1838 wiz_defined-function locations,
-            462 strings with 3617 characters,
-and the built_in function-call counts, 179 in all, are:
-= -- 14
-> -- 4
+            468 strings with 3798 characters,
+and the built_in function-call counts, 330 in all, are:
+= -- 26
+> -- 8
 < -- 0
-+ -- 2
-- -- 1
-* -- 12
-:= -- 33
-add.period$ -- 1
-call.type$ -- 1
++ -- 4
+- -- 2
+* -- 20
+:= -- 56
+add.period$ -- 2
+call.type$ -- 2
 change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 10
-empty$ -- 20
-format.name$ -- 1
-if$ -- 38
+cite$ -- 4
+duplicate$ -- 20
+empty$ -- 39
+format.name$ -- 2
+if$ -- 73
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 2
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 6
+int.to.str$ -- 2
+missing$ -- 4
+newline$ -- 13
+num.names$ -- 2
+pop$ -- 13
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2
+skip$ -- 4
 stack$ -- 0
 substring$ -- 0
-swap$ -- 1
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 1
-width$ -- 2
-write$ -- 13
-(There was 1 warning)
+warning$ -- 2
+while$ -- 2
+width$ -- 3
+write$ -- 23
+(There were 2 warnings)

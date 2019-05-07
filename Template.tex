@@ -46,13 +46,11 @@
 
 \section{Passwords}
 \label{sec:passwd}
-
 In this section, the designed password and authentication policy will be proposed and justified.
 First, the password policy will be explained in detail with additional authentication measures.
 Then, mechanisms of storing passwords will be entailed.
 
 \subsection{Password Policy}
-The design of the policy is the result of balancing complexity and overall security. 
 As Gollmann \cite{GollmannDieter2011Cs/D}suggested, the overall security may be diminished 
 if one security mechanism is overstated. Users tend to bypass the mechanism if it is too 
 inappropriate for them to properly work with, hence the overall security of the system 
@@ -65,10 +63,11 @@ Hence, by setting the minimum password length to ten, the difficulty for brute-f
 cracking would be noticeably increased.
 
 \subsubsection{Password Format}
-This policy intended to accumulating the strength of the valid password by requiring what and 
-how many kinds of character must be included in a password. By requiring the password to contain 
+This policy intended to accumulating the strength of valid password by requiring what kind 
+of character must be included in a password. By requiring the password to contain 
 at least one lower and upper letter, one number, and one special character, combining with 
-password length policy, the possibility of successful brute-force cracking would significantly decreasing.
+password length policy, the possibility of successful brute-force cracking would 
+be significantly decreasing.
 
 \subsubsection{Password Ageing}
 This policy requires users to change their password periodically. The likelihood of password 
@@ -80,14 +79,27 @@ To further diminishing the risk of potential password breaching over time, addit
 need to be employed to block users from using the same password twice. This policy is essential 
 to assist the password ageing policy to fulfil its purpose.
 
+\subsubsection{Password Choice}
+Dictionary attack is another approach frequently used for password cracking. The purpose of 
+this policy is to prevent this attack. This problem can be addressed by preventing user from 
+using the password in public known dictionary.
 
 \subsubsection{Login Attempts}
+This policy is designed to reduce the risk of brute-force attack. By limiting maximum number of 
+failed login attempts the success rate of brute-force attack can be reduced significantly.
 
 \subsection{Additional Authentication Measures}
-
-TOCTTOU and Biometrics
+Mechanism must be implemented to address the repeated authentication problem. 
+Between time of check to time of use, user identity exploitation may occur as the 
+authentication system does not keep track of what happened in between. 
+Therefore, before some important actions like change password can be successfully performed, 
+the user's identity need to be checked again to ensure the action is legitimate.
 
 \subsection{Storing Passwords}
+As suggested by Gollmann, password may be cached by browser\cite{GollmannDieter2011Cs/D}. Which 
+suggests that storing raw password directly in database is a bad practice. To maximise security, 
+password should be hased using one-way hash function with salting and stretching approaches\cite{FergusonNiels2010Ce:d}.
+Since hashing cannot be reversed, the original password will remain hidden.
 
 \section{Firewalls}
 \label{sec:firewalls}
