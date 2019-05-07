@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Template"] 1557257010 "Template.aux" "Template.bbl" "Template" 1557257047
+["bibtex Template"] 1557258836 "Template.aux" "Template.bbl" "Template" 1557258937
   "./IEEEbib.bst" 1557250998 17903 9ff833f4bf67f47893e44ee17b52d211 ""
-  "Template.aux" 1557257047 1453 22063a935ba5a1b102987433b0f264d3 ""
-  "bibtex.bib" 1557250548 1298 1d069a75fcafbeb58f920b8a9a5a1962 ""
+  "Template.aux" 1557258837 1681 99deff5be17882d1908b30fc5c0b5ec1 ""
+  "bibtex.bib" 1557257344 1182 af78fd18a5e4bab0cb03762e56ab3521 ""
   (generated)
   "Template.blg"
   "Template.bbl"
-["pdflatex"] 1557257047 "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" "Template.pdf" "Template" 1557257047
-  "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" 1557257047 4973 fa38d37a47d8defa5627db74700582be ""
+["pdflatex"] 1557258837 "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" "Template.pdf" "Template" 1557258937
+  "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" 1557258936 3589 d6c06ea7f8297b6f0decf1177287b1a7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1550406775 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1550406775 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1550406775 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -28,7 +28,6 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1550406775 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1550406775 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1550406775 1120 8b7d695260f3cff42e636090a8002094 ""
-  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1550406775 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1550406775 44729 811d6c62865936705a31c797a1d5dada ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb" 1550406775 46026 6dab18b61c907687b520c72847215a68 ""
   "/usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb" 1550406775 45458 a3faba884469519614ca56ba5f6b1de1 ""
@@ -62,17 +61,16 @@
   "/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty" 1550406775 12095 5337833c991d80788a43d3ce26bd1c46 ""
   "/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty" 1550406775 7075 2fe3d848bba95f139de11ded085e74aa ""
   "/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty" 1550406775 22417 1d9df1eb66848aa31b18a593099cf45c ""
-  "/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd" 1550406775 576 95c2c0baea9c719a4be29a3d4122498b ""
   "/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd" 1550406775 961 15056f4a61917ceed3a44e4ac11fcc52 ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1550406775 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1557011454 3233842 1a92d1d21a91d82fa70913e968179e54 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1557011433 7919195 3dbafa18c4253bd214eebe477c3713c2 ""
-  "Template.aux" 1557257047 1453 22063a935ba5a1b102987433b0f264d3 ""
-  "Template.bbl" 1557257010 203 ff9fbf4d029dc45c4d05cc9e10f2b45d "bibtex Template"
-  "Template.tex" 1557257047 4973 fa38d37a47d8defa5627db74700582be ""
+  "Template.aux" 1557258837 1681 99deff5be17882d1908b30fc5c0b5ec1 ""
+  "Template.bbl" 1557258837 184 5c2dc09453c78da4b17c3d07bddbb565 "bibtex Template"
+  "Template.tex" 1557258936 3589 d6c06ea7f8297b6f0decf1177287b1a7 ""
   "image1.jpg" 1557249567 212428 50f9035961560906e84f37a2aaf34dfe ""
   "spconf.sty" 1557249567 9005 d283852e4802b41bb20fcc7801219462 ""
   (generated)
   "Template.pdf"
-  "Template.aux"
   "Template.log"
+  "Template.aux"
