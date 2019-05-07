@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Template"] 1557251778 "Template.aux" "Template.bbl" "Template" 1557251860
+["bibtex Template"] 1557251778 "Template.aux" "Template.bbl" "Template" 1557251934
   "./IEEEbib.bst" 1557250998 17903 9ff833f4bf67f47893e44ee17b52d211 ""
-  "Template.aux" 1557251778 1072 3dd94567ce7b6084cbc39e22ae7e8f2f ""
+  "Template.aux" 1557251934 1072 3dd94567ce7b6084cbc39e22ae7e8f2f ""
   "bibtex.bib" 1557250548 1298 1d069a75fcafbeb58f920b8a9a5a1962 ""
   (generated)
-  "Template.bbl"
   "Template.blg"
-["pdflatex"] 1557251778 "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" "Template.pdf" "Template" 1557251860
-  "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" 1557251786 4102 aea9dcf0e17cdd1fe11c15d35a8880a9 ""
+  "Template.bbl"
+["pdflatex"] 1557251934 "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" "Template.pdf" "Template" 1557251934
+  "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" 1557251933 4102 63bb13fbde1ad63ecb35784ff5a28107 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1550406775 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1550406775 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1550406775 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -70,14 +70,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1550406775 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1557011454 3233842 1a92d1d21a91d82fa70913e968179e54 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1557011433 7919195 3dbafa18c4253bd214eebe477c3713c2 ""
-  "Template.aux" 1557251778 1072 3dd94567ce7b6084cbc39e22ae7e8f2f ""
+  "Template.aux" 1557251934 1072 3dd94567ce7b6084cbc39e22ae7e8f2f ""
   "Template.bbl" 1557251778 203 ff9fbf4d029dc45c4d05cc9e10f2b45d "bibtex Template"
-  "Template.tex" 1557251786 4102 aea9dcf0e17cdd1fe11c15d35a8880a9 ""
+  "Template.tex" 1557251933 4102 63bb13fbde1ad63ecb35784ff5a28107 ""
   "image1.jpg" 1557249567 212428 50f9035961560906e84f37a2aaf34dfe ""
-  "image3.jpg" 1557249567 212428 50f9035961560906e84f37a2aaf34dfe ""
-  "image4.jpg" 1557249567 212428 50f9035961560906e84f37a2aaf34dfe ""
   "spconf.sty" 1557249567 9005 d283852e4802b41bb20fcc7801219462 ""
   (generated)
-  "Template.log"
   "Template.aux"
+  "Template.log"
   "Template.pdf"

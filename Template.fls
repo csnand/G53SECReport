@@ -90,12 +90,10 @@ INPUT image1.jpg
 INPUT ./image1.jpg
 OUTPUT Template.pdf
 INPUT ./image1.jpg
-INPUT image3.jpg
-INPUT ./image3.jpg
-INPUT ./image3.jpg
-INPUT image4.jpg
-INPUT ./image4.jpg
-INPUT ./image4.jpg
+INPUT image1.jpg
+INPUT ./image1.jpg
+INPUT image1.jpg
+INPUT ./image1.jpg
 INPUT Template.bbl
 INPUT Template.bbl
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
