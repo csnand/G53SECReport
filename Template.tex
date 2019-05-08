@@ -100,10 +100,10 @@ Since hashing cannot be reversed, the original password will remain hidden.
 \section{Firewalls}
 \label{sec:firewalls}
 
-Firewalls are software or hardware that located between networks and filter potentially malicious 
+Firewalls are software or hardware located between networks and filter potentially malicious 
 packets from in and out traffic\cite{AndersonRoss1956-2008Se:a}.
-Figure \ref{firewall} illustrates a network firewall which often stand between local system and 
-the internet compare to the host-based firewalls which located on individual machines. 
+Figure \ref{firewall} illustrates a network firewall which often stands between the local system and 
+the internet compared to the host-based firewalls which located on individual machines. 
 According to Gollmann, firewalls can also prevent unauthorised accesses of the internal-only services which 
 block unnecessary or potentially dangerous access of external services from inside of the network\cite{GollmannDieter2011Cs/D}.
 
@@ -118,7 +118,7 @@ are only intended for internal access which suggests the necessity of blocking e
 may lead to security breaches. Another reason is that access external network from inside is also a potential 
 breach in terms of the internal network as those ports are entrances to the network. 
 
-As for internal network, some internal traffic is unnecessary even potential harmful. A peer-to-peer 
+As for the internal network, some internal traffic is unnecessary even potentially harmful. A peer-to-peer 
 communication protocol BitTorrent, in this case, is most likely been blocked in some internal network.
 
 \begin{figure}[H]
@@ -129,13 +129,13 @@ communication protocol BitTorrent, in this case, is most likely been blocked in 
 
 Although some normal traffic is blocked or certain access rules are enforced by firewalls, there are ways 
 to circumventing those rules and SSH tunnelling is one of them. 
-SSH tunnelling is a way to establish encrypted communication channel between two computers. In terms of 
-bypassing the firewall rules, SSH tunnelling serves as proxy. 
+SSH tunnelling is a way to establish an encrypted communication channel between two computers. In terms of 
+bypassing the firewall rules, SSH tunnelling serves as a proxy. 
 Figure \ref{ssh} shows how SSH tunnelling works in general.
 Since the target server cannot be accessed directly, the request is first sent to the proxy 
-server in the middle. Then the proxy server forward the request to the target and return the response 
-back to the the client. SSH tunnelling communicates with proxy server by establish a encrypted channel with 
-proxy server, and forward certain port on local server to another port on remote server.
+server in the middle. Then the proxy server forwards the request to the target and returns the response 
+back to the client. SSH tunnelling communicates with the proxy server by establishing an encrypted channel with 
+the proxy server, and forward certain port on the local server to another port on the remote server.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh1}
@@ -144,7 +144,7 @@ proxy server, and forward certain port on local server to another port on remote
 \end{figure}
 
 Some usages of SSH tunnelling can be legitimate. As figure \ref{ssh1} demonstrates, the intra-site.com is 
-a service only available from internal network. By establishing SSH tunnel with a machine inside the internal 
+a service only available from the internal network. By establishing the SSH tunnel with a machine inside the internal 
 network, the internal services can be accessed from external. In this case, working remotely can be achieved. 
 In fact, this approach is employed by most enterprises.
 
@@ -154,30 +154,14 @@ In fact, this approach is employed by most enterprises.
   \label{ssh2}
 \end{figure}
 
-Some usages of SSH tunnelling are disgraceful.In contrast to the example mentioned 
-earlier, accessing blocked websites or services from internal network, 
+Some usages of SSH tunnelling are disgraceful. In contrast to the example mentioned 
+earlier, accessing blocked websites or services from the internal network, 
 as figure \ref{ssh2}demonstrates, exposes the internal network to the whole Internet. 
 In this case, the internal is exposed under risks that the firewall built to eliminate which directly 
 invalidated the firewall. Hence, this way of using ssh tunnelling is considered disreputable. 
 
 \section{Server Security}
 \label{sec:serversec}
-
-
-
-%%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
-
-% and what actions you would perform if you had more time. 
-% Which services did
-% you install or remove? 
-% What configurations did you change? And so on.
-% try to perform or describe as many as you feel is reasonable to secure it. 
-% Many marks are available here for detail and justifications of your actions, 
-% but given you have 1000 words, try to priorities the critical vulnerabilities first. 
-% In some cases (e.g. distribution upgrades) it is acceptable to say what you would
-% have done given more time, but feel free to perform these actions if you wish.
-
-%%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Exploitation Process}
 \begin{figure}[H]
@@ -187,9 +171,9 @@ invalidated the firewall. Hence, this way of using ssh tunnelling is considered 
 \end{figure}
 
 Before the exploitation can begin, the necessary tools need to be prepared and initialised.
-This exploitation require Metasploit framework as backend and Armitage as front end. Since the 
-Metasploit framework require postgresql database, as figure \ref{kali1} shows, 
-the postgresql service need to be start first.
+This exploitation requires Metasploit framework as backend and Armitage as front end. Since the 
+Metasploit framework requires PostgreSQL database, as figure \ref{kali1} shows, 
+the postgresql service needs to start first.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{kali2}
@@ -197,9 +181,9 @@ the postgresql service need to be start first.
   \label{kali2}
 \end{figure}
 
-After the Armitage is seccessfully start, the first task is to detect all alive hosts within the 
-same subnet using ping scan provided by nmap. As figure \ref{kali2} shows, all alive host with ip address 
-can be matched by 10.0.2.* are showed here.
+After the Armitage is successfully started, the first task is to detect all alive hosts within the 
+same subnet using a ping scan provided by nmap. As figure \ref{kali2} shows, all alive host with IP address 
+can be matched by 10.0.2.* are shown here.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{kali3}
@@ -279,13 +263,13 @@ all information required further can be obtained.
 After the full access has been acquired, the last step of exploitation is to gather crucial system information 
 like packages installed and their version, all currently running services, system information and kernel version, 
 user list, and service list.
-As shown in figure \ref{kali9}, all those information is stored in text files.
+As shown in figure \ref{kali9}, all this information is stored in text files.
 
 
 \subsection{Security Fixes}
-As mentioned in previous section, the target host need to be detected first before any exploitation can begin.
+As mentioned in the previous section, the target host needs to be detected first before any exploitation can begin.
 In addition, the detection process was using the ping scan provided by nmap. Therefore, the first security vulnerability 
-need to be fixed is to prevent the machine from being detected. In this case, a firewall rule was added to the ubuntu 
+need to be fixed is to prevent the machine from being detected. In this case, a firewall rule was added to the Ubuntu 
 machine.
 
 \begin{figure}[H]
@@ -294,8 +278,8 @@ machine.
   \label{ubuntu4}
 \end{figure}
 
-As shown on figure \ref{ubuntu4}, the default firewall is quite permissive and allow any traffic by default. 
-By adding a rule, the all packet sent by ping action will be dropped. 
+As shown in figure \ref{ubuntu4}, the default firewall is quite permissive and allow any traffic by default. 
+By adding a rule, all packet sent by ping action will be dropped. 
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{kali10}
@@ -303,12 +287,12 @@ By adding a rule, the all packet sent by ping action will be dropped.
   \label{kali10}
 \end{figure}
 
-Figure \ref{kali10} shows the immediate effect after this rule being enforced. The first attempt suggests firewall 
+Figure \ref{kali10} shows the immediate effect after this rule being enforced. The first attempt suggests the firewall 
 with default settings. It is obvious that the target host was responding as normal which is a positive 
-confirmation of the target state. After the firewall being updated, the target stopped responding the ping request. 
+confirmation of the target state. After the firewall being updated, the target stopped responding to the ping request. 
 The target machine is either confirm nor deny, the ping requests. Hence, the attacker cannot determine the state of 
-the target host. Therefore, in this case, attacker may turn to the targets that return positive response. 
-Technically, other approaches can be employed to detect the state of target, but psychologically this method is 
+the target host. Therefore, in this case, the attacker may turn to the targets that return a positive response. 
+Technically, other approaches can be employed to detect the state of the target, but psychologically this method is 
 quite like effective.
 
 \begin{figure}[H]
@@ -317,9 +301,9 @@ quite like effective.
   \label{ubuntu8}
 \end{figure}
 
-The second crucial step of exploiting this machine is to cracking the root password by brute-forcing. 
-Therefore, the first step of fixing this vulnerability, as figure \ref{ubuntu8} shows, is to change current password into a strong one which 
-will significantly increasing the cost of brute-forcing. Due to the time constraint, password checking against 
+The second crucial step of exploiting this machine is to crack the root password by brute-forcing. 
+Therefore, the first step of fixing this vulnerability, as figure \ref{ubuntu8} shows, is to change the current password into a strong one which 
+will significantly increase the cost of brute-forcing. Due to the time constraint, password checking against 
 publicly known dictionaries is yet to be implemented.
 
 \begin{figure}[H]
@@ -328,17 +312,17 @@ publicly known dictionaries is yet to be implemented.
   \label{ubuntu6}
 \end{figure}
 
-Another factor that allow the brute-force cracking to continue is the maximum number of login attempts allowed 
-was too big. As figure \ref{ubuntu6} depicts, the default setting was 120. This issue can be easily fix by changing 
+Another factor that allows the brute-force cracking to continue is the maximum number of login attempts allowed 
+was too big. As figure \ref{ubuntu6} depicts, the default setting was 120. This issue can be easily fixed by changing 
 this number to a small one(in this case, it was set to three).
 
 By default, almost no password policy was enforced. Other than policies implemented earlier, all of the password policies 
 proposed for question one should be employed given enough time.
 
-In Unix system, root is the most powerful user as it has permissions to do anything. Therefore, it would be a disaster for 
+In the Unix system, the root is the most powerful user as it has permissions to do anything. Therefore, it would be a disaster for 
 systems to have root password breaching. The ultimate solution to address this issue is to forbid user login as root 
-as shown in figure \ref{ubuntu6}. Furthermore, the only one solution to prevent password leaking for all user is to 
-prevent users from login using password.
+as shown in figure \ref{ubuntu6}. Furthermore, the only solution to prevent password leaking for all user is to 
+prevent users from login using the password.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ubuntu3}
@@ -348,7 +332,7 @@ prevent users from login using password.
 Figure \ref{ubuntu3} shows the list of running services. Telnet and ftp service are provided by openbsd-inetd service 
 which should never be used as they transferring all information in plain text without any encryption.
 
-Due to the time constraint, all packages in the ubuntu system are still in default version. Almost all packages 
+Due to the time constraint, all packages in the Ubuntu system are still in default version. Almost all packages 
 alongside the kernel should be updated as they are hopelessly outdated. Many security breaches that should be fixed 
 for a long time may still exist in this system.
 
