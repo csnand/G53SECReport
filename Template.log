@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 00:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 01:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,36 +174,29 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
-<image1.jpg, id=1, 1557.82pt x 876.27374pt>
-File: image1.jpg Graphic file (type jpg)
-<use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 136.
-(pdftex.def)             Requested size: 241.84842pt x 136.03496pt.
-File: image1.jpg Graphic file (type jpg)
-<use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 143.
-(pdftex.def)             Requested size: 113.81102pt x 64.00623pt.
-File: image1.jpg Graphic file (type jpg)
-<use image1.jpg>
-Package pdftex.def Info: image1.jpg  used on input line 150.
-(pdftex.def)             Requested size: 113.81102pt x 64.00623pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
-] (./Template.bbl) [2
+]
+<firewall.png, id=9, 456.20438pt x 228.10219pt>
+File: firewall.png Graphic file (type png)
+<use firewall.png>
+Package pdftex.def Info: firewall.png  used on input line 135.
+(pdftex.def)             Requested size: 241.84842pt x 120.92142pt.
+ (./Template.bbl) [2
 
- <./image1.jpg>] (./Template.aux) ) 
+ <./firewall.png (PNG copy)>] (./Template.aux) ) 
 Here is how much of TeX's memory you used:
  2217 strings out of 492616
- 29260 string characters out of 6135178
- 99868 words of memory out of 5000000
- 6098 multiletter control sequences out of 15000+600000
+ 29294 string characters out of 6135178
+ 99871 words of memory out of 5000000
+ 6099 multiletter control sequences out of 15000+600000
  16840 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,318b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,25p,318b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (2 pages, 258291 bytes).
+Output written on Template.pdf (2 pages, 147969 bytes).
 PDF statistics:
  25 PDF objects out of 1000 (max. 8388607)
  16 compressed objects within 1 object stream

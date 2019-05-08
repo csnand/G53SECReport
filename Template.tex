@@ -106,15 +106,36 @@ Since hashing cannot be reversed, the original password will remain hidden.
 
 %%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
 
-% what is firewall, the purpose
-% why block ports from normal traffic
 % explain SSH tunnelling(VPN) which circumventing firewall restrictions
 % example of legitimate use
 % example of disreputable use
 
 %%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
+Firewalls are software or hardware that located between networks and filter potentially malicious 
+packets from in and out traffic\cite{AndersonRoss1956-2008Se:a}.
+Figure \ref{firewall} illustrates a network firewall which often stand between local system and 
+the internet compare to the host-based firewalls which located on individual machines. 
+According to Gollmann, firewalls can also prevent unauthorised accesses of the internal-only services which 
+block unnecessary or potentially dangerous access of external services from inside of the network\cite{GollmannDieter2011Cs/D}.
 
 
+There several reasons that administrators may block port from normal traffic. As mentioned above, some services 
+are only intended for internal access which suggests the necessity of blocking external access that 
+may lead to security breaches. Another reason is that access external network from inside is also a potential 
+breach in terms of the internal network as those ports are entrances to the network. 
+
+As for internal network, some internal traffic is unnecessary even potential harmful. A peer-to-peer 
+communication protocol BitTorrent, in this case, is most likely been blocked in some internal network.
+
+
+
+
+
+\begin{figure}[htb]
+  \includegraphics[width=8.5cm]{firewall}
+  \caption{Network Firewall}
+  \label{firewall}
+\end{figure}
 
 
 \section{Server Security}
@@ -129,33 +150,7 @@ Since hashing cannot be reversed, the original password will remain hidden.
 % uncomment the preceding line ``\centerline...'' and replace ``imageX.ps''
 % with a suitable PostScript file name.
 % -------------------------------------------------------------------------
-\begin{figure}[htb]
 
-\begin{minipage}[b]{1.0\linewidth}
-  \centering
-  \centerline{\includegraphics[width=8.5cm]{image1}}
-%  \vspace{2.0cm}
-  \centerline{(a) Result 1}\medskip
-\end{minipage}
-%
-\begin{minipage}[b]{.48\linewidth}
-  \centering
-  \centerline{\includegraphics[width=4.0cm]{image1}}
-%  \vspace{1.5cm}
-  \centerline{(b) Results 3}\medskip
-\end{minipage}
-\hfill
-\begin{minipage}[b]{0.48\linewidth}
-  \centering
-  \centerline{\includegraphics[width=4.0cm]{image1}}
-%  \vspace{1.5cm}
-  \centerline{(c) Result 4}\medskip
-\end{minipage}
-%
-\caption{Example of placing a figure with experimental results.}
-\label{fig:res}
-%
-\end{figure}
 
 
 % To start a new column (but not a new page) and help balance the last-page
