@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex Template"] 1557294801 "Template.aux" "Template.bbl" "Template" 1557294963
+["bibtex Template"] 1557300130 "Template.aux" "Template.bbl" "Template" 1557300131
   "./IEEEbib.bst" 1557250998 17903 9ff833f4bf67f47893e44ee17b52d211 ""
-  "Template.aux" 1557294916 3303 fccbc52142de17b1f7bacf8448408de5 ""
+  "Template.aux" 1557300131 4400 fdf24e094d29d4db1965bb36421866b3 ""
   "bibtex.bib" 1557276775 1406 c1a60e4112095f515fc86f77f909e1d7 ""
   (generated)
-  "Template.blg"
   "Template.bbl"
-["pdflatex"] 1557294916 "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" "Template.pdf" "Template" 1557294963
-  "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" 1557294963 11987 e48871cad2ae85bc1dee56c3e1c9f742 ""
+  "Template.blg"
+["pdflatex"] 1557300130 "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" "Template.pdf" "Template" 1557300131
+  "/home/jackey/Downloads/G53SEC/G53SECReport/Template.tex" 1557300129 16106 a42cce8a5fd397de2e4ccb3201a675fb ""
   "/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1550406775 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1550406775 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1550406775 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -72,11 +72,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1550406775 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1557011454 3233842 1a92d1d21a91d82fa70913e968179e54 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1557011433 7919195 3dbafa18c4253bd214eebe477c3713c2 ""
-  "Template.aux" 1557294916 3303 fccbc52142de17b1f7bacf8448408de5 ""
-  "Template.bbl" 1557294801 807 319fa5f38ccd43e049ed850df5ff23b0 "bibtex Template"
-  "Template.tex" 1557294963 11987 e48871cad2ae85bc1dee56c3e1c9f742 ""
+  "Template.aux" 1557300131 4400 fdf24e094d29d4db1965bb36421866b3 ""
+  "Template.bbl" 1557300130 807 319fa5f38ccd43e049ed850df5ff23b0 "bibtex Template"
+  "Template.tex" 1557300129 16106 a42cce8a5fd397de2e4ccb3201a675fb ""
   "firewall.png" 1557270160 100687 0d218f29605b8a8fa53bba34cba21921 ""
   "kali1.png" 1557290281 164660 ee3b390e1b287cca70011817c8d7cd98 ""
+  "kali10.png" 1557291814 202787 deffbe4468407ed5b1bf8a198fce4d63 ""
   "kali2.png" 1557291683 97818 29218bf8fbfdd0f2052d1f05a77aec09 ""
   "kali3.png" 1557291702 96346 5ea84b90faf4a90f88496c8d903bd97e ""
   "kali4.png" 1557291715 126274 5db4aaa54055f9eba5631d60ee157253 ""
@@ -84,11 +85,16 @@
   "kali6.png" 1557291743 123598 3d98392239ba79d24af4e28311c81e03 ""
   "kali7.png" 1557291759 155500 7065575192be142cdc2b522704b6972b ""
   "kali8.png" 1557291778 110927 645c9f40e66f84f8d47a6fc04ec28110 ""
+  "kali9.png" 1557291793 126960 d17a367894a3556e5d85be74169e94ce ""
   "spconf.sty" 1557249567 9005 d283852e4802b41bb20fcc7801219462 ""
   "ssh.jpg" 1557283497 34696 28fae035b941e38f6c971449a0ffceb1 ""
   "ssh1.jpg" 1557273980 29238 bb25b8915183739d6df91bbd3704bb41 ""
   "ssh2.jpg" 1557273998 23163 5cd0c428b3e4efc3641f508692ea39ca ""
+  "ubuntu3.png" 1557290382 2897 0a0403fa58d6119f39d29b4bd17572b1 ""
+  "ubuntu4.png" 1557291851 8851 4e3b84d9bb896ec3c59655d11ad1dba6 ""
+  "ubuntu6.png" 1557292460 12433 a4bea463848dc179e7edeaf6d5ce7a0f ""
+  "ubuntu8.png" 1557293086 3750 78f6a84417a488183ba1e656b37d6de9 ""
   (generated)
   "Template.pdf"
-  "Template.aux"
   "Template.log"
+  "Template.aux"
