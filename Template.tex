@@ -42,20 +42,20 @@
 
 \section{Passwords}
 \label{sec:passwd}
-In this section, the designed password and authentication policy will be proposed and justified.
-First, the password policy will be explained in detail with additional authentication measures.
+In this section, the designed password and authentication policies will be proposed and justified.
+First, the password policy will be explained in detail with additional authentication measures. 
 Then, mechanisms of storing passwords will be entailed.
 
 \subsection{Password Policy}
-As Gollmann \cite{GollmannDieter2011Cs/D}suggested, the overall security may be diminished 
+As Gollmann suggested, the overall security may be diminished 
 if one security mechanism is overstated. Users tend to bypass the mechanism if it is too 
 inappropriate for them to properly work with, hence the overall security of the system 
-may be weakened. By considering that, the following password policies are proposed.
+may be weakened \cite{GollmannDieter2011Cs/D}. By considering that, the following password policies are proposed.
 
 \subsubsection{Password Length}
 This policy enforces the minimum number of character required to use as a valid password. 
 Generally, the short the password, the more likely and easily to be cracked by brute-forcing.
-Hence, by setting the minimum password length to ten, the difficulty for brute-forcing password 
+Hence, by setting the minimum password length to ten, the difficulty for brute-force password 
 cracking would be noticeably increased.
 
 \subsubsection{Password Format}
@@ -63,7 +63,7 @@ This policy intended to accumulating the strength of a valid password by requiri
 of character must be included in a password. By requiring the password to contain 
 at least one lower and upper letter, one number, and one special character, combining with 
 password length policy, the possibility of successful brute-force cracking would 
-be significantly decreasing.
+be significantly decrease.
 
 \subsubsection{Password Ageing}
 This policy requires users to change their password periodically. The likelihood of password 
@@ -76,9 +76,9 @@ need to be employed to block users from using the same password twice. This poli
 to assist the password ageing policy to fulfil its purpose.
 
 \subsubsection{Password Choice}
-The Dictionary attack is another approach frequently used for password cracking. The purpose of 
-this policy is to prevent this attack. This problem can be addressed by preventing the user from 
-using the password in public known dictionary.
+The dictionary attack is another approach frequently used for password cracking. The purpose of 
+this policy is to prevent this attack. This problem can be addressed by preventing users from 
+using the password in public known dictionaries.
 
 \subsubsection{Login Attempts}
 This policy is designed to reduce the risk of brute-force attack. By limiting the maximum number of 
@@ -104,8 +104,8 @@ Firewalls are software or hardware located between networks and filter potential
 packets from in and out traffic\cite{AndersonRoss1956-2008Se:a}.
 Figure \ref{firewall} illustrates a network firewall which often stands between the local system and 
 the internet compared to the host-based firewalls which located on individual machines. 
-According to Gollmann, firewalls can also prevent unauthorised accesses of the internal-only services which 
-block unnecessary or potentially dangerous access of external services from inside of the network\cite{GollmannDieter2011Cs/D}.
+According to Gollmann, firewalls can also prevent unauthorised accesses of the internal-only services while 
+blocking unnecessary or potentially dangerous access of external services from inside of the network\cite{GollmannDieter2011Cs/D}.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{firewall}
@@ -113,7 +113,7 @@ block unnecessary or potentially dangerous access of external services from insi
   \label{firewall}
 \end{figure}
 
-There several reasons that administrators may block port from normal traffic. As mentioned above, some services 
+There are several reasons that administrators may block ports from normal traffic. As mentioned above, some services 
 are only intended for internal access which suggests the necessity of blocking external access that 
 may lead to security breaches. Another reason is that access external network from inside is also a potential 
 breach in terms of the internal network as those ports are entrances to the network. 
@@ -135,7 +135,7 @@ Figure \ref{ssh} shows how SSH tunnelling works in general.
 Since the target server cannot be accessed directly, the request is first sent to the proxy 
 server in the middle. Then the proxy server forwards the request to the target and returns the response 
 back to the client. SSH tunnelling communicates with the proxy server by establishing an encrypted channel with 
-the proxy server, and forward certain port on the local server to another port on the remote server.
+the proxy server, and forwards certain port on the local server to another port on the remote server.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh1}
@@ -156,7 +156,7 @@ In fact, this approach is employed by most enterprises.
 
 Some usages of SSH tunnelling are disgraceful. In contrast to the example mentioned 
 earlier, accessing blocked websites or services from the internal network, 
-as figure \ref{ssh2}demonstrates, exposes the internal network to the whole Internet. 
+as figure \ref{ssh2} demonstrates, exposes the internal network to the whole Internet. 
 In this case, the internal is exposed under risks that the firewall built to eliminate which directly 
 invalidated the firewall. Hence, this way of using ssh tunnelling is considered disreputable. 
 
@@ -181,7 +181,7 @@ the postgresql service needs to start first.
   \label{kali2}
 \end{figure}
 
-After the Armitage is successfully started, the first task is to detect all alive hosts within the 
+After the Armitage was successfully started, the first task was to detect all alive hosts within the 
 same subnet using a ping scan provided by nmap. As figure \ref{kali2} shows, all alive host with IP address 
 can be matched by 10.0.2.* are shown here.
 
@@ -191,7 +191,7 @@ can be matched by 10.0.2.* are shown here.
   \label{kali3}
 \end{figure}
 
-After all alive hosts are detected, the next step is to use intense scan provided by nmap to scan the 
+After all alive hosts were detected, the next step was to use intense scan provided by nmap to scan the 
 target machine. As figure \ref{kali3} shows, system version, open ports, services running and their version 
 can be detected during this step. This step is essential because it can provide crucial information 
 for the attacker to determine where the security vulnerabilities exist and how to attack this machine.
@@ -224,8 +224,8 @@ for the attacker to determine where the security vulnerabilities exist and how t
   %
   \end{figure}
 
-The next step as figure \ref{kali4-5-6} suggests, the heartbleed exploitation is carried out. This attack 
-can be successfully carried out due to the host running a very old version of system and services where 
+The next step as figure \ref{kali4-5-6} suggests, the heartbleed exploitation was carried out. This attack 
+can be successfully carried out due to the host was running a very old version of system and services where 
 the heartbleed vulnerability still exists.
 
 \begin{figure}[H]
@@ -247,11 +247,11 @@ the heartbleed vulnerability still exists.
   \label{kali7-8}
   %
   \end{figure}
-The next step is the most crucial one as the full access can be obtained after this step is successfully 
-carried out. This step is to use provided password dictionary to carry out brute-force password cracking.
+The next step is the most crucial one as the full access can be obtained after this step was successfully 
+carried out. This step used provided password dictionary to carry out brute-force password cracking.
 As figure \ref{kali7-8} shows, the root password was successfully acquired. Consequently, the full access to 
-the host is now obtained.
-Since no prior knowledge about the host is provided, with the success of root password cracking, 
+the host was then obtained.
+Since no prior knowledge about the host was provided, with the success of root password cracking, 
 all information required further can be obtained.
 
 \begin{figure}[H]
@@ -260,16 +260,16 @@ all information required further can be obtained.
   \label{kali9}
 \end{figure}
 
-After the full access has been acquired, the last step of exploitation is to gather crucial system information 
-like packages installed and their version, all currently running services, system information and kernel version, 
+After the full access has been acquired, the last step of exploitation was to gather crucial system information 
+like packages installed and their version, all currently running services, system information, kernel version, 
 user list, and service list.
-As shown in figure \ref{kali9}, all this information is stored in text files.
+As shown in figure \ref{kali9}, all this information was stored in text files.
 
 
 \subsection{Security Fixes}
-As mentioned in the previous section, the target host needs to be detected first before any exploitation can begin.
-In addition, the detection process was using the ping scan provided by nmap. Therefore, the first security vulnerability 
-need to be fixed is to prevent the machine from being detected. In this case, a firewall rule was added to the Ubuntu 
+As mentioned in the previous section, the target host needed to be detected first before any exploitation can begin.
+In addition, the detection process used the ping scan provided by nmap. Therefore, the first security vulnerability 
+need to be fixed was to prevent the machine from being detected. In this case, a firewall rule was added to the Ubuntu 
 machine.
 
 \begin{figure}[H]
@@ -278,7 +278,7 @@ machine.
   \label{ubuntu4}
 \end{figure}
 
-As shown in figure \ref{ubuntu4}, the default firewall is quite permissive and allow any traffic by default. 
+As shown in figure \ref{ubuntu4}, the default firewall was quite permissive and allow any traffic by default. 
 By adding a rule, all packet sent by ping action will be dropped. 
 
 \begin{figure}[H]
@@ -301,8 +301,8 @@ quite like effective.
   \label{ubuntu8}
 \end{figure}
 
-The second crucial step of exploiting this machine is to crack the root password by brute-forcing. 
-Therefore, the first step of fixing this vulnerability, as figure \ref{ubuntu8} shows, is to change the current password into a strong one which 
+The second crucial step of exploiting this machine was to crack the root password by brute-forcing. 
+Therefore, the first step of fixing this vulnerability, as figure \ref{ubuntu8} shows, was to change the current password into a strong one which 
 will significantly increase the cost of brute-forcing. Due to the time constraint, password checking against 
 publicly known dictionaries is yet to be implemented.
 
@@ -312,7 +312,7 @@ publicly known dictionaries is yet to be implemented.
   \label{ubuntu6}
 \end{figure}
 
-Another factor that allows the brute-force cracking to continue is the maximum number of login attempts allowed 
+Another factor that allows the brute-force cracking to continue was the maximum number of login attempts allowed 
 was too big. As figure \ref{ubuntu6} depicts, the default setting was 120. This issue can be easily fixed by changing 
 this number to a small one(in this case, it was set to three).
 
@@ -335,8 +335,6 @@ which should never be used as they transferring all information in plain text wi
 Due to the time constraint, all packages in the Ubuntu system are still in default version. Almost all packages 
 alongside the kernel should be updated as they are hopelessly outdated. Many security breaches that should be fixed 
 for a long time may still exist in this system.
-
-
 
 % To start a new column (but not a new page) and help balance the last-page
 % column length use \vfill\pagebreak.
