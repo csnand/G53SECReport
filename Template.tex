@@ -100,13 +100,6 @@ Since hashing cannot be reversed, the original password will remain hidden.
 \section{Firewalls}
 \label{sec:firewalls}
 
-%%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
-
-% explain SSH tunnelling(VPN) which circumventing firewall restrictions
-% example of legitimate use
-% example of disreputable use
-
-%%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
 Firewalls are software or hardware that located between networks and filter potentially malicious 
 packets from in and out traffic\cite{AndersonRoss1956-2008Se:a}.
 Figure \ref{firewall} illustrates a network firewall which often stand between local system and 
@@ -130,21 +123,23 @@ communication protocol BitTorrent, in this case, is most likely been blocked in 
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh}
-  \caption{SSH Tunnelling}
+  \caption{(a)SSH Tunnelling\cite{chamith_2012}}
   \label{ssh}
 \end{figure}
 
 Although some normal traffic is blocked or certain access rules are enforced by firewalls, there are ways 
 to circumventing those rules and SSH tunnelling is one of them. 
 SSH tunnelling is a way to establish encrypted communication channel between two computers. In terms of 
-bypassing the firewall rules, SSH tunnelling serves as proxy. Figure \ref{proxy} shows how the proxy works 
-in general. Since the target server cannot be accessed directly, the request is first sent to the proxy 
+bypassing the firewall rules, SSH tunnelling serves as proxy. 
+Figure \ref{ssh} shows how SSH tunnelling works in general.
+Since the target server cannot be accessed directly, the request is first sent to the proxy 
 server in the middle. Then the proxy server forward the request to the target and return the response 
-back the the client.
+back to the the client. SSH tunnelling communicates with proxy server by establish a encrypted channel with 
+proxy server, and forward certain port on local server to another port on remote server.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh1}
-  \caption{(a) SSH Tunnelling\cite{chamith_2012}}
+  \caption{(b) SSH Tunnelling\cite{chamith_2012}}
   \label{ssh1}
 \end{figure}
 
@@ -155,12 +150,13 @@ In fact, this approach is employed by most enterprises.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh2}
-  \caption{(b) SSH Tunnelling \cite{chamith_2012}}
+  \caption{(c) SSH Tunnelling \cite{chamith_2012}}
   \label{ssh2}
 \end{figure}
-Some usages of SSH tunnelling are disgraceful. In contrast to the example mentioned earlier, 
-accessing blocked websites or services from internal network, as figure \ref{ssh2}demonstrates, 
-exposes the internal network to the whole Internet. 
+
+Some usages of SSH tunnelling are disgraceful.In contrast to the example mentioned 
+earlier, accessing blocked websites or services from internal network, 
+as figure \ref{ssh2}demonstrates, exposes the internal network to the whole Internet. 
 In this case, the internal is exposed under risks that the firewall built to eliminate which directly 
 invalidated the firewall. Hence, this way of using ssh tunnelling is considered disreputable. 
 
@@ -169,21 +165,125 @@ invalidated the firewall. Hence, this way of using ssh tunnelling is considered 
 
 %%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
 
+% Describe in detail what actions you performed, 
+% and why, 
+% and what actions you would perform if you had more time. 
+% Which services did
+% you install or remove? 
+% What configurations did you change? And so on.
+% try to perform or describe as many as you feel is reasonable to secure it. 
+% Many marks are available here for detail and justifications of your actions, 
+% but given you have 1000 words, try to priorities the critical vulnerabilities first. 
+% In some cases (e.g. distribution upgrades) it is acceptable to say what you would
+% have done given more time, but feel free to perform these actions if you wish.
+
 %%%%%%%%%%%%%%%%%%% NOTES %%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{kali1}
+  \caption{Sarting postgresql service}
+  \label{kali1}
+\end{figure}
 
-% Below is an example of how to insert images. Delete the ``\vspace'' line,
-% uncomment the preceding line ``\centerline...'' and replace ``imageX.ps''
-% with a suitable PostScript file name.
-% -------------------------------------------------------------------------
+Before the exploitation can begin, the necessary tools need to be prepared and initialised.
+This exploitation require Metasploit framework as backend and Armitage as front end. Since the 
+Metasploit framework require postgresql database, as figure \ref{kali1} shows, 
+the postgresql service need to be start first.
+
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{kali2}
+  \caption{Ping Scan}
+  \label{kali2}
+\end{figure}
+
+After the Armitage is seccessfully start, the first task is to detect all alive hosts within the 
+same subnet using ping scan provided by nmap. As figure \ref{kali2} shows, all alive host with ip address 
+can be matched by 10.0.2.* are showed here.
+
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{kali3}
+  \caption{Intense Scan}
+  \label{kali3}
+\end{figure}
+
+After all alive hosts are detected, the next step is to use intense scan provided by nmap to scan the 
+target machine. As figure \ref{kali3} shows, system version, open ports, services running and their version 
+can be detected during this step. This step is essential because it can provide crucial information 
+for the attacker to determine where the security vulnerabilities exist and how to attack this machine.
+
+
+\begin{figure}[H]
+  \begin{minipage}[b]{1.0\linewidth}
+    \centering
+    \centerline{\includegraphics[width=8.5cm]{kali4}}
+  %  \vspace{2.0cm}
+    \centerline{(a) Heartbleed Exploitation}\medskip
+  \end{minipage}
+
+  \begin{minipage}[b]{.48\linewidth}
+    \centering
+    \centerline{\includegraphics[width=4.0cm]{kali5}}
+  %  \vspace{1.5cm}
+    \centerline{(b) Heartbleed Exploitation}\medskip
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.48\linewidth}
+    \centering
+    \centerline{\includegraphics[width=4.0cm]{kali6}}
+  %  \vspace{1.5cm}
+    \centerline{(b) Heartbleed Exploitation}\medskip
+  \end{minipage}
+  %
+  \caption{Heartbleed Exploitation Results.}
+  \label{kali4-5-6}
+  %
+  \end{figure}
+
+The next step as figure \ref{kali4-5-6} suggests, the heartbleed exploitation is carried out. This attack 
+can be successfully carried out due to the host running a very old version of system and services where 
+the heartbleed vulnerability still exists.
+
+\begin{figure}[H]
+  \begin{minipage}[b]{.48\linewidth}
+    \centering
+    \centerline{\includegraphics[width=4.0cm]{kali7}}
+  %  \vspace{1.5cm}
+    \centerline{(a) SSH Login Exploitation}\medskip
+  \end{minipage}
+  \hfill
+  \begin{minipage}[b]{0.48\linewidth}
+    \centering
+    \centerline{\includegraphics[width=4.0cm]{kali8}}
+  %  \vspace{1.5cm}
+    \centerline{(b) SSH Login Exploitation}\medskip
+  \end{minipage}
+  %
+  \caption{SSH Login Exploitation Results.}
+  \label{kali7-8}
+  %
+  \end{figure}
+The next step is the most crucial one as the full access can be obtained after this step is successfully 
+carried out. This step is to use provided password dictionary to carry out brute-force password cracking.
+As figure \ref{kali7-8} shows, the root password was successfully aquired. Consequently, the full access to 
+the host is now obtained.
+Since no prior knowledge about the host is provided, with the success of root password cracking, 
+all information required further can be obtained.
+
+
+
+
 
 
 
 % To start a new column (but not a new page) and help balance the last-page
 % column length use \vfill\pagebreak.
 % -------------------------------------------------------------------------
-%\vfill
-%\pagebreak
+
+\vfill
+\pagebreak
+
+\vfill
+\pagebreak
 
 \bibliographystyle{IEEEbib}
 \bibliography{bibtex}

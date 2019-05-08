@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 03:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 06:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -192,33 +192,71 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 <firewall.png, id=9, 456.20438pt x 228.10219pt>
 File: firewall.png Graphic file (type png)
 <use firewall.png>
-Package pdftex.def Info: firewall.png  used on input line 118.
+Package pdftex.def Info: firewall.png  used on input line 111.
 (pdftex.def)             Requested size: 241.84842pt x 120.92142pt.
 <ssh.jpg, id=10, 660.21657pt x 247.67531pt>
 File: ssh.jpg Graphic file (type jpg)
 <use ssh.jpg>
-Package pdftex.def Info: ssh.jpg  used on input line 132.
+Package pdftex.def Info: ssh.jpg  used on input line 125.
 (pdftex.def)             Requested size: 241.84842pt x 90.72763pt.
-
-
-LaTeX Warning: Reference `proxy' on page 2 undefined on input line 140.
-
 <ssh1.jpg, id=11, 493.0922pt x 258.21469pt>
 File: ssh1.jpg Graphic file (type jpg)
 <use ssh1.jpg>
-Package pdftex.def Info: ssh1.jpg  used on input line 146.
+Package pdftex.def Info: ssh1.jpg  used on input line 141.
 (pdftex.def)             Requested size: 241.84842pt x 126.64844pt.
 <ssh2.jpg, id=12, 578.16pt x 236.38312pt>
 File: ssh2.jpg Graphic file (type jpg)
 <use ssh2.jpg>
-Package pdftex.def Info: ssh2.jpg  used on input line 157.
+Package pdftex.def Info: ssh2.jpg  used on input line 152.
 (pdftex.def)             Requested size: 241.84842pt x 98.87985pt.
+<kali1.png, id=13, 571.38469pt x 371.88937pt>
+File: kali1.png Graphic file (type png)
+<use kali1.png>
+Package pdftex.def Info: kali1.png  used on input line 183.
+(pdftex.def)             Requested size: 241.84842pt x 157.40681pt.
 
-Overfull \hbox (22.69333pt too wide) in paragraph at lines 161--166
-\OT1/ptm/m/n/10 web-sites or ser-vices from in-ter-nal net-work, as fig-ure 4[]demonstrates,
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(./Template.bbl [2 <./firewall.png (PNG copy)> <./ssh.jpg> <./ssh1.jpg> <./ssh2.jpg>]
+ [2 <./firewall.png (PNG copy)> <./ssh.jpg> <./ssh1.jpg> <./ssh2.jpg>]
+<kali2.png, id=17, 805.50937pt x 557.08125pt>
+File: kali2.png Graphic file (type png)
+<use kali2.png>
+Package pdftex.def Info: kali2.png  used on input line 194.
+(pdftex.def)             Requested size: 241.84842pt x 167.25317pt.
+<kali3.png, id=18, 807.7678pt x 560.0925pt>
+File: kali3.png Graphic file (type png)
+<use kali3.png>
+Package pdftex.def Info: kali3.png  used on input line 204.
+(pdftex.def)             Requested size: 241.84842pt x 167.68718pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<kali4.png, id=19, 807.7678pt x 559.33969pt>
+File: kali4.png Graphic file (type png)
+<use kali4.png>
+Package pdftex.def Info: kali4.png  used on input line 218.
+(pdftex.def)             Requested size: 241.84842pt x 167.4618pt.
+<kali5.png, id=20, 803.25093pt x 557.83406pt>
+File: kali5.png Graphic file (type png)
+<use kali5.png>
+Package pdftex.def Info: kali5.png  used on input line 225.
+(pdftex.def)             Requested size: 113.81102pt x 79.03253pt.
+<kali6.png, id=21, 807.015pt x 560.8453pt>
+File: kali6.png Graphic file (type png)
+<use kali6.png>
+Package pdftex.def Info: kali6.png  used on input line 232.
+(pdftex.def)             Requested size: 113.81102pt x 79.09117pt.
+<kali7.png, id=22, 809.27344pt x 554.82281pt>
+File: kali7.png Graphic file (type png)
+<use kali7.png>
+Package pdftex.def Info: kali7.png  used on input line 249.
+(pdftex.def)             Requested size: 113.81102pt x 78.02176pt.
+<kali8.png, id=23, 809.27344pt x 559.33969pt>
+File: kali8.png Graphic file (type png)
+<use kali8.png>
+Package pdftex.def Info: kali8.png  used on input line 256.
+(pdftex.def)             Requested size: 113.81102pt x 78.65694pt.
+ [3 <./kali1.png (PNG copy)> <./kali2.png (PNG copy)> <./kali3.png (PNG copy)> <./kali4.png (PNG copy)> <./kali5.png (PNG copy)> <./kali6.png (PNG copy)>] (./Template.bbl
 LaTeX Font Info:    Try loading font information for OT1+pcr on input line 23.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
@@ -237,26 +275,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--26
 \OT1/pcr/m/n/10 2012 / 03 / 21 / ssh-[]tunnelling-[]explained/$\OT1/ptm/m/n/10 ,
  []
 
-) [3
-
-] (./Template.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [4 <./kali7.png (PNG copy)> <./kali8.png (PNG copy)>] (./Template.aux) ) 
 Here is how much of TeX's memory you used:
- 2408 strings out of 492616
- 31629 string characters out of 6135178
- 102370 words of memory out of 5000000
- 6273 multiletter control sequences out of 15000+600000
+ 2452 strings out of 492616
+ 32175 string characters out of 6135178
+ 102410 words of memory out of 5000000
+ 6309 multiletter control sequences out of 15000+600000
  17809 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,25p,318b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (3 pages, 250044 bytes).
+Output written on Template.pdf (4 pages, 1229750 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 46 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
