@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 01:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.5)  8 MAY 2019 01:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -98,37 +98,57 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (./Template.aux)
+) (/usr/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count100
+\float@exts=\toks20
+\float@box=\box29
+\@float@everytoks=\toks21
+\@floatcapt=\box30
+) (/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (./Template.aux
+
+LaTeX Warning: Label `firewall' multiply defined.
+
+
+LaTeX Warning: Label `firewall' multiply defined.
+
+
+LaTeX Warning: Label `firewall' multiply defined.
+
+)
 \openout1 = `Template.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 37.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
+\scratchcounter=\count101
 \scratchdimen=\dimen114
-\scratchbox=\box29
-\nofMPsegments=\count101
-\nofMParguments=\count102
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count103
+\scratchbox=\box31
+\nofMPsegments=\count102
+\nofMParguments=\count103
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count104
 \MPscratchDim=\dimen115
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
-\everyMPtoPDFconversion=\toks21
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -171,9 +191,9 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 47.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -182,24 +202,60 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 <firewall.png, id=9, 456.20438pt x 228.10219pt>
 File: firewall.png Graphic file (type png)
 <use firewall.png>
-Package pdftex.def Info: firewall.png  used on input line 135.
+Package pdftex.def Info: firewall.png  used on input line 118.
 (pdftex.def)             Requested size: 241.84842pt x 120.92142pt.
- (./Template.bbl) [2
+<proxy.png, id=10, 593.21625pt x 271.0125pt>
+File: proxy.png Graphic file (type png)
+<use proxy.png>
+Package pdftex.def Info: proxy.png  used on input line 132.
+(pdftex.def)             Requested size: 241.84842pt x 110.48726pt.
+<ssh1.jpg, id=11, 493.0922pt x 258.21469pt>
+File: ssh1.jpg Graphic file (type jpg)
+<use ssh1.jpg>
+Package pdftex.def Info: ssh1.jpg  used on input line 143.
+(pdftex.def)             Requested size: 241.84842pt x 126.64844pt.
+<ssh2.jpg, id=12, 578.16pt x 236.38312pt>
+File: ssh2.jpg Graphic file (type jpg)
+<use ssh2.jpg>
+Package pdftex.def Info: ssh2.jpg  used on input line 149.
+(pdftex.def)             Requested size: 241.84842pt x 98.87985pt.
+ (./Template.bbl
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 23.
+ (/usr/share/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \hbox (badness 6775) in paragraph at lines 21--26
+[]\OT1/ptm/m/n/10 Buddhika Chamith,  ``Ssh tun-nel-ing ex-plained,''
+ []
 
- <./firewall.png (PNG copy)>] (./Template.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+\OT1/pcr/m/n/10 https : / / chamibuddhika . wordpress . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+\OT1/pcr/m/n/10 2012 / 03 / 21 / ssh-[]tunnelling-[]explained/$\OT1/ptm/m/n/10 ,
+ []
+
+) [2 <./firewall.png (PNG copy)> <./proxy.png (PNG copy)> <./ssh1.jpg> <./ssh2.jpg>] (./Template.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2217 strings out of 492616
- 29294 string characters out of 6135178
- 99871 words of memory out of 5000000
- 6099 multiletter control sequences out of 15000+600000
- 16840 words of font info for 38 fonts, out of 8000000 for 9000
+ 2404 strings out of 492616
+ 31615 string characters out of 6135178
+ 102385 words of memory out of 5000000
+ 6269 multiletter control sequences out of 15000+600000
+ 17809 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,25p,318b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Template.pdf (2 pages, 147969 bytes).
+ 41i,7n,25p,318b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on Template.pdf (2 pages, 242494 bytes).
 PDF statistics:
- 25 PDF objects out of 1000 (max. 8388607)
- 16 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

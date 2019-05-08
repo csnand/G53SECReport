@@ -1,9 +1,5 @@
-% Template for ICIP-2019 paper; to be used with:
-%          spconf.sty  - ICASSP/ICIP LaTeX style file, and
-%          IEEEbib.bst - IEEE bibliography style file.
-% --------------------------------------------------------------------------
 \documentclass{article}
-\usepackage{spconf,amsmath,graphicx, cite}
+\usepackage{spconf,amsmath,graphicx, cite, float, url}
 
 % Example definitions.
 % --------------------
@@ -98,7 +94,7 @@ the user's identity need to be checked again to ensure the action is legitimate.
 \subsection{Storing Passwords}
 As suggested by Gollmann, password may be cached by browser\cite{GollmannDieter2011Cs/D}. Which 
 suggests that storing raw password directly in database is a bad practice. To maximise security, 
-password should be hased using one-way hash function with salting and stretching approaches\cite{FergusonNiels2010Ce:d}.
+password should be hashed using one-way hash function with salting and stretching approaches\cite{FergusonNiels2010Ce:d}.
 Since hashing cannot be reversed, the original password will remain hidden.
 
 \section{Firewalls}
@@ -118,6 +114,11 @@ the internet compare to the host-based firewalls which located on individual mac
 According to Gollmann, firewalls can also prevent unauthorised accesses of the internal-only services which 
 block unnecessary or potentially dangerous access of external services from inside of the network\cite{GollmannDieter2011Cs/D}.
 
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{firewall}
+  \caption{Network Firewall}
+  \label{firewall}
+\end{figure}
 
 There several reasons that administrators may block port from normal traffic. As mentioned above, some services 
 are only intended for internal access which suggests the necessity of blocking external access that 
@@ -127,16 +128,33 @@ breach in terms of the internal network as those ports are entrances to the netw
 As for internal network, some internal traffic is unnecessary even potential harmful. A peer-to-peer 
 communication protocol BitTorrent, in this case, is most likely been blocked in some internal network.
 
-
-
-
-
-\begin{figure}[htb]
-  \includegraphics[width=8.5cm]{firewall}
-  \caption{Network Firewall}
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{proxy}
+  \caption{Network Proxy}
   \label{firewall}
 \end{figure}
 
+Although some normal traffic is blocked or certain access rules are enforced by firewalls, there are ways 
+to circumventing those rules and SSH tunnelling is one of them. 
+SSH tunnelling is a way to establish encrypted communication channel between two computers.
+
+
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{ssh1}
+  \caption{(a) SSH Tunnelling\cite{chamith_2012}}
+  \label{firewall}
+\end{figure}
+
+\begin{figure}[H]
+  \includegraphics[width=8.5cm]{ssh2}
+  \caption{(b) SSH Tunnelling \cite{chamith_2012}}
+  \label{firewall}
+\end{figure}
+
+
+Some usages of SSH tunnelling can be legitimate. 
+
+Some usages of SSH tunnelling are disgraceful. 
 
 \section{Server Security}
 \label{sec:serversec}
