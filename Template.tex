@@ -129,32 +129,40 @@ As for internal network, some internal traffic is unnecessary even potential har
 communication protocol BitTorrent, in this case, is most likely been blocked in some internal network.
 
 \begin{figure}[H]
-  \includegraphics[width=8.5cm]{proxy}
-  \caption{Network Proxy}
-  \label{firewall}
+  \includegraphics[width=8.5cm]{ssh}
+  \caption{SSH Tunnelling}
+  \label{ssh}
 \end{figure}
 
 Although some normal traffic is blocked or certain access rules are enforced by firewalls, there are ways 
 to circumventing those rules and SSH tunnelling is one of them. 
-SSH tunnelling is a way to establish encrypted communication channel between two computers.
-
+SSH tunnelling is a way to establish encrypted communication channel between two computers. In terms of 
+bypassing the firewall rules, SSH tunnelling serves as proxy. Figure \ref{proxy} shows how the proxy works 
+in general. Since the target server cannot be accessed directly, the request is first sent to the proxy 
+server in the middle. Then the proxy server forward the request to the target and return the response 
+back the the client.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh1}
   \caption{(a) SSH Tunnelling\cite{chamith_2012}}
-  \label{firewall}
+  \label{ssh1}
 \end{figure}
+
+Some usages of SSH tunnelling can be legitimate. As figure \ref{ssh1} demonstrates, the intra-site.com is 
+a service only available from internal network. By establishing SSH tunnel with a machine inside the internal 
+network, the internal services can be accessed from external. In this case, working remotely can be achieved. 
+In fact, this approach is employed by most enterprises.
 
 \begin{figure}[H]
   \includegraphics[width=8.5cm]{ssh2}
   \caption{(b) SSH Tunnelling \cite{chamith_2012}}
-  \label{firewall}
+  \label{ssh2}
 \end{figure}
-
-
-Some usages of SSH tunnelling can be legitimate. 
-
-Some usages of SSH tunnelling are disgraceful. 
+Some usages of SSH tunnelling are disgraceful. In contrast to the example mentioned earlier, 
+accessing blocked websites or services from internal network, as figure \ref{ssh2}demonstrates, 
+exposes the internal network to the whole Internet. 
+In this case, the internal is exposed under risks that the firewall built to eliminate which directly 
+invalidated the firewall. Hence, this way of using ssh tunnelling is considered disreputable. 
 
 \section{Server Security}
 \label{sec:serversec}

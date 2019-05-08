@@ -104,9 +104,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/adobe/times/ptmri8r.tfm
 INPUT firewall.png
 INPUT ./firewall.png
 INPUT ./firewall.png
-INPUT proxy.png
-INPUT ./proxy.png
-INPUT ./proxy.png
+INPUT ssh.jpg
+INPUT ./ssh.jpg
+INPUT ./ssh.jpg
 INPUT ssh1.jpg
 INPUT ./ssh1.jpg
 INPUT ./ssh1.jpg
